@@ -202,7 +202,7 @@ export class Helper {
     }
     FeedbackByGithub() {
         window.open(
-            'https://github.com/nonnonstop/sd-webui-3d-open-pose-editor/issues/new/choose'
+            'https://github.com/robonxt/sd-webui-3d-openpose-editor-mobile/issues/new/choose'
         )
     }
 }

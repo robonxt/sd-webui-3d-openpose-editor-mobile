@@ -52,7 +52,7 @@ const config: UserConfigFn = ({ command, mode, ssrBuild }) => {
         manifest: {
             name: '3D Openpose Editor',
             short_name: '3D Openpose Editor',
-            description: '3D Openpose Editor (Yu Zhu)',
+            description: '3D Openpose Editor (Yu Zhu, modified by robonxt)',
             theme_color: '#ffffff',
             background_color: '#ffffff',
             icons: [
@@ -107,7 +107,7 @@ const config: UserConfigFn = ({ command, mode, ssrBuild }) => {
     })
 
     return {
-        base: mode === 'singlefile' ? './' : '/open-pose-editor/',
+        base: mode === 'singlefile' ? './' : '/3d-openpose-editor-mobile/',
         define: {
             global: {},
             __APP_VERSION__: JSON.stringify('0.1.18'),

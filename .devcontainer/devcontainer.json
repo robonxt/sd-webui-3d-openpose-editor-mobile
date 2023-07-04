@@ -22,12 +22,12 @@
 		},
 		{
 			"type": "volume",
-			"source": "sd-webui-3d-open-pose-editor-venv",
+			"source": "sd-webui-3d-openpose-editor-mobile-venv",
 			"target": "${containerWorkspaceFolder}/.venv"
 		},
 		{
 			"type": "volume",
-			"source": "sd-webui-3d-open-pose-editor-nodemodules",
+			"source": "sd-webui-3d-openpose-editor-mobile-nodemodules",
 			"target": "${containerWorkspaceFolder}/node_modules"
 		}
 	],
