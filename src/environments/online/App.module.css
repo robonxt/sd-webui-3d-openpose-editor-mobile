@@ -14,22 +14,22 @@
 
 .gallery {
     user-select: none;
-    height: 140px;
+    height: 100px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 2px;
+    right: 2px;
     display: flex;
     justify-content: flex-end;
 }
 
 .gallery img {
     width: 100px;
-    height: 140px;
+    height: 100px;
     object-fit: contain;
     background-color: gray;
     user-select: none;
-    margin-right: 2px;
-    margin-left: 2px;
+    margin-right: 1px;
+    margin-left: 1px;
 }
 
 .background {
