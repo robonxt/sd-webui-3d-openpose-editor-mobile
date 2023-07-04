@@ -60,7 +60,7 @@ def write_config_file() -> pathlib.Path:
 def on_ui_tabs():
     with gr.Blocks(analytics_enabled=False) as blocks:
         create_ui()
-    return [(blocks, "3D Openpose", "threedopenpose")]
+    return [(blocks, "3D OpenPose Editor", "threedopenpose")]
 
 
 def create_ui():
@@ -193,7 +193,7 @@ def create_ui():
 def on_ui_settings():
     from modules.shared import OptionInfo, opts
 
-    section = ("openpose3d", "3D Openpose Editor")
+    section = ("openpose3d", "3D OpenPose Editor")
 
     opts.add_option(
         "openpose3d_use_online_version",
@@ -259,7 +259,7 @@ def main():
     gr.routes.templates.TemplateResponse = template_response
 
     with gr.Blocks(analytics_enabled=False, css=css_path.read_text()) as blocks:
-        with gr.Tab(label="3D Openpose", elem_id="tab_threedopenpose"):
+        with gr.Tab(label="3D OpenPose Editor", elem_id="tab_threedopenpose"):
             create_ui()
     blocks.launch()
 

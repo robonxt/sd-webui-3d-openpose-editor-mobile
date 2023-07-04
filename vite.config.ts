@@ -51,8 +51,8 @@ const config: UserConfigFn = ({ command, mode, ssrBuild }) => {
         ],
         manifest: {
             name: '3D Openpose Editor',
-            short_name: '3D Openpose Editor',
-            description: '3D Openpose Editor (Yu Zhu, modified by robonxt)',
+            short_name: '3D OpenPose Editor',
+            description: '3D OpenPose Editor (Yu Zhu, modified by robonxt)',
             theme_color: '#ffffff',
             background_color: '#ffffff',
             icons: [
