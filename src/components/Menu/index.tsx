@@ -319,8 +319,7 @@ const MenubarDemo: React.FC<{
             </Menubar.Menu>
             
             <Menubar.Menu>
-                <Menubar.Trigger
-                    className={classNames(MenubarTrigger, Blue)}
+                <Menubar.Trigger className={classNames(MenubarTrigger, Blue)}
                     onClick={async () => {
                         const image = editor.MakeImages()
                         const result = Object.fromEntries(
@@ -335,7 +334,7 @@ const MenubarDemo: React.FC<{
                         onScreenShot(result)
                     }}
                 >
-                    {i18n.t('Generate')}
+                    {i18n.t('Generate')}>
                 </Menubar.Trigger>
             </Menubar.Menu>
         </Menubar.Root>

@@ -86,9 +86,6 @@ def create_ui():
                 <iframe id="openpose3d_iframe" src="{html.escape(html_url)}"></iframe>
                 """
             )
-            gr.Markdown(
-                "Original: [Online 3D Openpose Editor](https://zhuyu1997.github.io/open-pose-editor/)"
-            )
         with gr.Tab(label="Send to ControlNet"):
             with gr.Row():
                 send_t2i = gr.Button(value="Send to txt2img", variant="primary")
