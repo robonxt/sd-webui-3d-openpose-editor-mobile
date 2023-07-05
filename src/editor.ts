@@ -1093,7 +1093,7 @@ export class BodyEditor {
     }
 
     CapturePreview() {
-        const scale = (window.devicePixelRatio * 140.0) / this.OutputHeight
+        const scale = (window.devicePixelRatio * 100.0) / this.OutputHeight
 
         const outputWidth = this.OutputWidth * scale
         const outputHeight = this.OutputHeight * scale
