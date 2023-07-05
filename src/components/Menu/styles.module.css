@@ -22,7 +22,7 @@
     color: var(--violet11);
     font-size: 13px;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
     gap: 2px;
 }
@@ -39,7 +39,7 @@
 
 .MenubarContent,
 .MenubarSubContent {
-    min-width: 220px;
+    min-width: 180px;
     background-color: white;
     border-radius: 6px;
     padding: 5px;

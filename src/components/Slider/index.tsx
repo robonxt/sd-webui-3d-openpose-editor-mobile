@@ -20,7 +20,7 @@ const SliderDemo: React.FC<{
             value={[value]}
             min={range[0]}
             max={range[1]}
-            step={(range[1] - range[0]) / 150.0}
+            step={(range[1] - range[0]) / 140.0}
             onValueChange={([value]: number[]) => {
                 onValueChange?.(value)
             }}

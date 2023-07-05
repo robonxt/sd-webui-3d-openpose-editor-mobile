@@ -74,7 +74,7 @@ def create_ui():
         use_online = False
 
     if use_online:
-        html_url = "https://zhuyu1997.github.io/open-pose-editor/"
+        html_url = "https://robonxt.github.io/sd-webui-3d-openpose-editor-mobile/"
     else:
         config = {"config": get_asset_url(write_config_file()) or ""}
         html_url = get_asset_url(root_path / "pages" / "index.html", config)

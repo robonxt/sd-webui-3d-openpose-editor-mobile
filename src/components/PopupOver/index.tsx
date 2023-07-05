@@ -50,7 +50,7 @@ const Slider2: React.FC<{
                     // width:"max-content",
                     overflow: 'hidden',
                     color: 'gray',
-                    fontSize: '70%',
+                    fontSize: '65%',
                     marginInlineEnd: 10,
                     // whiteSpace: 'nowrap',
                     textAlign: 'end',
@@ -71,7 +71,7 @@ const Slider2: React.FC<{
                 }}
                 onValueCommit={onValueCommit}
                 style={{
-                    width: 150,
+                    width: 140,
                 }}
             ></Slider>
             <input
@@ -81,7 +81,7 @@ const Slider2: React.FC<{
                     width: 60,
                     height: 20,
                     color: 'gray',
-                    fontSize: '70%',
+                    fontSize: '65%',
                 }}
                 value={inputValue}
                 onChange={(event) => {

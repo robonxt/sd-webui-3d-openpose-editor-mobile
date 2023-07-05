@@ -4,7 +4,9 @@ export type IPostMessage = {
     payload: any
 }
 
-const iframe = document.getElementById('open-pose-editor') as HTMLIFrameElement
+const iframe = document.getElementById(
+    '3d-openpose-editor-mobile'
+) as HTMLIFrameElement
 
 const poseMessage = (message: IPostMessage) => {
     iframe.contentWindow?.postMessage(message)

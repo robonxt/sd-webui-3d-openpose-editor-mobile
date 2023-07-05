@@ -14,17 +14,17 @@
 
 .gallery {
     user-select: none;
-    height: 140px;
+    height: 90px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 2px;
+    right: 2px;
     display: flex;
     justify-content: flex-end;
 }
 
 .gallery img {
     width: 100px;
-    height: 140px;
+    height: 90px;
     object-fit: contain;
     background-color: gray;
     user-select: none;

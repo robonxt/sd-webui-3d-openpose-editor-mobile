@@ -10,7 +10,7 @@ import { uploadImage } from '../../utils/transfer'
 import { getCurrentTime } from '../../utils/time'
 import useForceUpdate from '../../hooks/useFoceUpdate'
 import classNames from 'classnames'
-import { useLanguageSelect } from '../../hooks'
+//import { useLanguageSelect } from '../../hooks'
 import { ShowContextMenu } from '../ContextMenu'
 import { ShowDialog } from '../Dialog'
 import { SetCDNBase } from '../../utils/detect'
@@ -36,7 +36,7 @@ const MenubarDemo: React.FC<{
 }> = ({ editor, onChangeBackground, onScreenShot, style }) => {
     const forceUpdate = useForceUpdate()
     const helper = useMemo(() => new Helper(editor), [editor])
-    const { current, changeLanguage, languagList } = useLanguageSelect()
+    //const { current, changeLanguage, languagList } = useLanguageSelect()
 
     useEffect(() => {
         const show = (data: { mouseX: number; mouseY: number }) => {
@@ -321,74 +321,6 @@ const MenubarDemo: React.FC<{
                 </Menubar.Portal>
             </Menubar.Menu>
 
-            <Menubar.Menu>
-                <Menubar.Trigger className={MenubarTrigger}>
-                    {i18n.t('Feedback')}
-                </Menubar.Trigger>
-                <Menubar.Portal>
-                    <Menubar.Content
-                        className={MenubarContent}
-                        align="start"
-                        sideOffset={5}
-                        alignOffset={-14}
-                    >
-                        <Menubar.Item
-                            className={classNames(MenubarItem, inset)}
-                            onSelect={() => {
-                                helper.FeedbackByGithub()
-                            }}
-                        >
-                            Github
-                        </Menubar.Item>
-                        <Menubar.Item
-                            className={classNames(MenubarItem, inset)}
-                            onSelect={() => {
-                                helper.FeedbackByQQ()
-                            }}
-                        >
-                            QQ
-                        </Menubar.Item>
-                    </Menubar.Content>
-                </Menubar.Portal>
-            </Menubar.Menu>
-            <Menubar.Menu>
-                <Menubar.Trigger className={MenubarTrigger}>
-                    Language
-                </Menubar.Trigger>
-                <Menubar.Portal>
-                    <Menubar.Content
-                        className={MenubarContent}
-                        align="start"
-                        sideOffset={5}
-                        alignOffset={-14}
-                    >
-                        <Menubar.RadioGroup
-                            value={current}
-                            onValueChange={(v) => {
-                                changeLanguage(v)
-                            }}
-                        >
-                            {languagList.map((item) => (
-                                <Menubar.RadioItem
-                                    className={classNames(
-                                        MenubarRadioItem,
-                                        inset
-                                    )}
-                                    key={item}
-                                    value={item}
-                                >
-                                    <Menubar.ItemIndicator
-                                        className={MenubarItemIndicator}
-                                    >
-                                        <DotFilledIcon />
-                                    </Menubar.ItemIndicator>
-                                    {item}
-                                </Menubar.RadioItem>
-                            ))}
-                        </Menubar.RadioGroup>
-                    </Menubar.Content>
-                </Menubar.Portal>
-            </Menubar.Menu>
             <Menubar.Menu>
                 <Menubar.Trigger
                     className={classNames(MenubarTrigger, Blue)}

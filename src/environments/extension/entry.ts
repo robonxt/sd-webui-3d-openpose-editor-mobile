@@ -21,7 +21,7 @@ let isInitialized = false
 let isPaused = false
 
 onUiLoaded(async () => {
-    console.log('sd-webui-3d-open-pose-editor: onUiLoaded')
+    console.log('sd-webui-3d-openpose-editor-mobile: onUiLoaded')
 
     const sendToControlNet = async (
         container: Element,
@@ -188,7 +188,7 @@ onUiLoaded(async () => {
         }
     }
     if (!isInitialized) {
-        console.error('sd-webui-3d-open-pose-editor: Timeout')
+        console.error('sd-webui-3d-openpose-editor-mobile: Timeout')
         return
     }
 

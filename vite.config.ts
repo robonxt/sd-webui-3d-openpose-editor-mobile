@@ -107,7 +107,7 @@ const config: UserConfigFn = ({ command, mode, ssrBuild }) => {
     })
 
     return {
-        base: mode === 'singlefile' ? './' : '/open-pose-editor/',
+        base: mode === 'singlefile' ? './' : '/3d-openpose-editor-mobile/',
         define: {
             global: {},
             __APP_VERSION__: JSON.stringify('0.1.18'),
